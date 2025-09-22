@@ -1,4 +1,4 @@
-html{
+html {
   --color-1: #463220;
   --color-2: #66593c;
   --color-3: #eceadd;
@@ -8,53 +8,101 @@ html{
   --gap: 1.25rem;
 }
 
-body{
+body {
   font-family: sans-serif;
   margin: 0px;
   color: var(--color-2);
   background: var(--color-4);
 }
 
-.box{
+.box {
   padding: var(--gap);
   border-radius: var(--gap);
   background: var(--color-5);
 }
 
-button{
+button {
   font-family: sans-serif;
   font-size: 1rem;
   cursor: pointer;
 }
 
-h1,h2,h3{
+h1,
+h2,
+h3 {
   font-weight: 600;
   margin: 0px;
 }
 
-ul{
+ul {
   list-style: none;
   padding: 0px;
   margin: 0px;
 }
-.flex{
+
+.flex {
   display: flex;
   gap: var(--gap);
 }
-.flex > *{
+
+.flex>* {
   flex: 1;
 }
-.mb{
+
+.mb {
   margin-bottom: var(--gap);
 }
-.bh-1{background: var(--color-1);}
-.bh-2{background: var(--color-2);}
-.bh-3{background: var(--color-3);}
-.bh-4{background: var(--color-4);}
-.bh-5{background: var(--color-5);}
 
-.container{
+.bh-1 {
+  background: var(--color-1);
+}
+
+.bh-2 {
+  background: var(--color-2);
+}
+
+.bh-3 {
+  background: var(--color-3);
+}
+
+.bh-4 {
+  background: var(--color-4);
+}
+
+.bh-5 {
+  background: var(--color-5);
+}
+
+.container {
   display: block;
   padding: var(--gap);
   gap: var(--gap);
+}
+
+/* Resumo */
+
+.resumo {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.resumo h2 {
+  font-size: 1.5rem;
+  margin-bottom: var(--gap);
+  color: var(--color-1);
+}
+
+.venda{
+  display: grid;
+  grid-template-columns: auto auto 1fr;
+  gap: vat(--gap);
+  margin-bottom: var(--gap-s);
+  align-items: center;
+}
+.venda div:last-child{
+  justify-content: end;
+}
+.venda a{
+  text-decoration: none;
+  color: inherit;
 }
